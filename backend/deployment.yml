@@ -21,4 +21,4 @@ spec:
             - containerPort: 4000
           env:
             - name: DB_HOST
-              value: mariadb-service
+              value: rdb-service
