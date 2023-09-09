@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: front
-          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-fe@sha256:6058563f2e21253dee1f1ee3dce63d12002e0272407990a43eca5c8adbd605f2"
+          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-fe@sha256:b819a713325286198436db508231cc20c5bba43c4c5db667e84efd43ff204879"
           ports:
             - containerPort: 80
           env:
