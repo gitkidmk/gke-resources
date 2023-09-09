@@ -23,4 +23,4 @@ spec:
             - name: NGINX_HOST
               value: back-service
             - name: NGINX_PORT
-              value: 4000
+              value: "4000"
