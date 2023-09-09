@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-deployment
+  labels:
+    app: front
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: front
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+        - name: front
+          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-fe@sha256:6058563f2e21253dee1f1ee3dce63d12002e0272407990a43eca5c8adbd605f2"
+          ports:
+            - containerPort: 80
+          env:
+            - name: NGINX_HOST
+              value: back-service
+            - name: NGINX_PORT
+              value: 4000
