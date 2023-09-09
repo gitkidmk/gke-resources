@@ -5,7 +5,7 @@ metadata:
   labels:
     app: back
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: back
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: back
-          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-be@sha256:2e8695ca07e2fcd44e42ace4bbbb8743b973f356582b8d6ff0c265cf45a85731"
+          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-be:v1"
           ports:
             - containerPort: 4000
           env:

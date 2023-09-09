@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: mariadb
-          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-db@sha256:7193ea2e3c7ce0691bab382408fd846c5afd61e0eb2ed3ed8fc50153c0a91ce0"
+          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-db:v1"
           ports:
             - containerPort: 3306
           volumeMounts:
