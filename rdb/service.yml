@@ -6,7 +6,7 @@ spec:
   selector:
     app: mariadb
   ports:
-    - protocol: TCP
-      port: 3306
-      targetPort: 3306
+  - port: 3306
+    targetPort: 3306
+    protocol: TCP
   type: LoadBalancer
