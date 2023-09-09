@@ -15,10 +15,10 @@ spec:
         app: back
     spec:
       containers:
-        - name: back
-          image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-be:v1"
-          ports:
-            - containerPort: 4000
-          env:
-            - name: DB_HOST
-              value: rdb-service
+      - name: back
+        image: "asia-docker.pkg.dev/verdant-option-398406/mbti-repo/mbti-be:v1"
+        ports:
+          - containerPort: 4000
+        env:
+          - name: DB_HOST
+            value: rdb-service
