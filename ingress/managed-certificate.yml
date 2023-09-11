@@ -1,0 +1,9 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: mkkang-cert
+  namespace: default
+spec:
+  domains:
+    - www.mkkang.me
+    - mkkang.me
