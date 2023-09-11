@@ -6,3 +6,4 @@ GKE(Google Kubernetes Engine)에서 사용되는 리소스 프로젝트입니다
 - Deployment
 - Service
 - PersistentVolumeClaim
+- Ingress
